@@ -54,9 +54,9 @@ useEffect(() => {
   });
 return (
     <div className="page">
-      <h1 className="text-center">Documents</h1>
+      <h1 className="text-center">Invoice Sheet</h1>
       <ButtonToolbar onClick={openAddTemplateModal}>
-        <Button variant="primary">Add Document</Button>
+        <Button variant="primary">Add Invoice</Button>
       </ButtonToolbar>
 <Modal show={openAddModal} onHide={closeAddModal}>
         <Modal.Header closeButton>
@@ -89,8 +89,8 @@ return (
         <thead>
           <tr>
             <th>Name</th>
-            <th>Document</th>
-            <th>Generate Document</th>
+            <th>Invoice</th>
+            <th>Generate Invoice</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
@@ -110,7 +110,7 @@ return (
                     variant="outline-primary"
                     onClick={generateSingleDocument.bind(this, d.id)}
                   >
-                    Generate Document
+                    Generate Invoice
                   </Button>
                 </td>
                 <td>
